@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+	license agreements. See the NOTICE file distributed with this work for additional 
+	information regarding copyright ownership. The ASF licenses this file to 
+	You under the Apache License, Version 2.0 (the "License"); you may not use 
+	this file except in compliance with the License. You may obtain a copy of 
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
+	by applicable law or agreed to in writing, software distributed under the 
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific 
+	language governing permissions and limitations under the License. -->
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" metadata-complete="true">
+
+	<servlet>
+		<servlet-name>RetrieveCarInfoServlet</servlet-name>
+		<servlet-class>RetrieveCarInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RetrieveCarInfoServlet</servlet-name>
+		<url-pattern>/RetrieveCarInfoServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddCarByAdminDesignServlet</servlet-name>
+		<servlet-class>AddCarByAdminDesignServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCarByAdminDesignServlet</servlet-name>
+		<url-pattern>/AddCarByAdminDesignServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>UpdateCarInformationAdminServlet</servlet-name>
+		<servlet-class>UpdateCarInformationAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCarInformationAdminServlet</servlet-name>
+		<url-pattern>/UpdateCarInformationAdminServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ManageReservationByAdminServlet</servlet-name>
+		<servlet-class>ManageReservationByAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ManageReservationByAdminServlet</servlet-name>
+		<url-pattern>/ManageReservationByAdminServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>CancelReservationByAdminServlet</servlet-name>
+		<servlet-class>CancelReservationByAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CancelReservationByAdminServlet</servlet-name>
+		<url-pattern>/CancelReservationByAdminServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminDisplayServlet</servlet-name>
+		<servlet-class>AdminDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminDisplayServlet</servlet-name>
+		<url-pattern>/AdminDisplayServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AddCarByAdminServlet</servlet-name>
+		<servlet-class>AddCarByAdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCarByAdminServlet</servlet-name>
+		<url-pattern>/AddCarByAdminServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProcessLocation</servlet-name>
+		<servlet-class>utilities.ProcessLocation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProcessLocation</servlet-name>
+		<url-pattern>/ProcessLocation</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Autocomplete</servlet-name>
+		<servlet-class>utilities.Autocomplete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Autocomplete</servlet-name>
+		<url-pattern>/autocomplete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SignUp</servlet-name>
+		<servlet-class>SignUp</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUp</servlet-name>
+		<url-pattern>/SignUp</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AjaxServlet</servlet-name>
+		<servlet-class>AjaxServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AjaxServlet</servlet-name>
+		<url-pattern>/AjaxServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Home</servlet-name>
+		<jsp-file>/Home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginPage</servlet-name>
+		<jsp-file>/LoginPage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginPage</servlet-name>
+		<url-pattern>/LoginPage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BookCar</servlet-name>
+		<jsp-file>/BookCar.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookCar</servlet-name>
+		<url-pattern>/BookCar</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>insertDB</servlet-name>
+		<jsp-file>/insertDB.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insertDB</servlet-name>
+		<url-pattern>/insertDB</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SignUpPage</servlet-name>
+		<jsp-file>/SignUpPage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpPage</servlet-name>
+		<url-pattern>/SignUpPage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForgotPasswordPage</servlet-name>
+		<jsp-file>/ForgotPasswordPage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordPage</servlet-name>
+		<url-pattern>/ForgotPasswordPage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CancelBooking</servlet-name>
+		<jsp-file>/CancelBooking.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CancelBooking</servlet-name>
+		<url-pattern>/CancelBooking</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>TwitterServlet</servlet-name>
+		<servlet-class>TwitterServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>TwitterServlet</servlet-name>
+		<url-pattern>/TwitterServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>Home</welcome-file>
+	</welcome-file-list>
+
+</web-app>
